@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Description --> 
+    <meta name="Description" content="Design Engineering student at Imperial College London Portfolio. Come take a look at my projects!">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Style.css">
+
+    <!-- Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#da532c">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <meta name="keywords" content="Imperial, Design Engineer, Portfolio">
+    <meta name="author" content="Alexandre Berkovic">
+
+    <title>Alexandre Berkovic | Portfolio</title>
+  </head>
+  <body>
+
+    <nav>
+        <div class="nav-logo">AB</div>
+        <div class="nav-selected-container">
+            <div class="nav-point"></div>
+            <a class="select-page" href="index.html">Home</a>
+        </div>
+        <a class="nav-page-other" href="portfolio.pdf">Portfolio</a>
+        <a class="nav-page-other" href="CV.pdf">Resume</a>
+        <a href="https://www.linkedin.com/in/alexandreberkovic/"><img class="nav-img" src="linkedin.svg"></a>
+        <a href="mailto:alexandreberkovic@gmail.com"><img class="nav-img" src="mail.svg"></a>
+
+    </nav>
+
+    <div class="content">
+        <div class="first-name">
+            <h1>
+                Alexandre
+            </h1>
+            <img src="circle-2.png" class="circle-2-pic">
+            <img src="circle.png" class="circle-pic">
+            <img src="triangle.png" class="triangle-pic">
+        </div>
+        <div class="description">
+            <div class="description-header">
+                <h2>
+                    Design engineer
+                </h2>
+                <div class="description-header-bar"></div>
+            </div>
+            <p>
+                Based in London as a third year engineering student at Imperial.<br><br>
+                I love robotics, design, code, data and anything related to innovation!<br><br>
+                I am currently looking for a six months placement and am open to all opportunities.
+            </p>    
+        </div>
+        <div class="last-name">
+            <h1>
+                Berkovic
+            </h1>
+        </div>
+        <img src="photo.png" class="profile-pic">
+
+        <div class="icon">
+            <a href="https://www.linkedin.com/in/alexandreberkovic/"><img class="nav-img-phone" src="linkedin.svg"></a>
+            <a href="mailto:alexandreberkovic@gmail.com"><img class="nav-img-phone" src="mail.svg"></a>
+        </div>
+
+        <div class="containers">
+            <div class="cv-container" onclick="window.location='../CV.pdf'">
+                <a class="header-link" href="./CV.pdf">Resume</a>
+            </div>
+            <div class="portfolio-container" onclick="window.location='../portfolio.pdf'">
+                <a class="header-link" href="./portfolio.pdf">Portfolio</a>
+            </div>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyCf77iXubSSxCcwDAsKUmvLlk0akkBOCj4",
+        authDomain: "portfolio-ede33.firebaseapp.com",
+        databaseURL: "https://portfolio-ede33.firebaseio.com",
+        projectId: "portfolio-ede33",
+        storageBucket: "portfolio-ede33.appspot.com",
+        messagingSenderId: "313930077893",
+        appId: "1:313930077893:web:f4669a31221a5fd3b082ac",
+        measurementId: "G-L3MDZFQX5E"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+  </body>
+</html>
